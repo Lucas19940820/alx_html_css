@@ -50,7 +50,7 @@ q:before, q:after {
 table, th, td, tr {
 	border-collapse: collapse;
 	border-spacing: 0;
-    border: 2px solid black;
+    border: 2px solid rgb(8, 8, 8);
 }
 
 
@@ -64,27 +64,35 @@ h1, h2, h3, h4, h5, h6, header {
 	font-family: 'Yeseva One', sans-serif;
 }
 article {
+	background-color: rgb(171, 210, 233);
+	color: white;
 }
 header {
-	border-bottom: 1px solid rgb(221,221,221);
+	border: 1px solid rgb(171, 210, 233);
 	transition: border-bottom-color 1s ease;
 }
 header a {
-	color: rgba(0, 0, 0, 0.8);
+	color: red;
 }
 aside {
-	background: #FAFAFA;
+	background: white;
+	border-right: 1px solid rgb(171, 210, 233);
+	border-bottom: 1px solid rgb(171, 210, 233);
 }
 aside p {
-	border: 1px solid #bbb;
-	background: #ddd;
-	color: black;
+	border: 1px solid rgb(171, 210, 233);
+	background: red;
+	color: white;
 }
 footer a {
-	color: rgba(0, 0, 0, 0.8);
+	color: white;
+	background-color: red;
 }
-a {
-	color: #F80002;
+a  {
+	color: red;
+}
+a:hover {
+	color: blue;
 }
 
 
@@ -153,6 +161,8 @@ aside p {
 footer {
 	padding: 5px 15px;
 	height: 80px;
+	color: black;
+	
 }
 
 
