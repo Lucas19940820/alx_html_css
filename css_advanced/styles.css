@@ -1,0 +1,382 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: source sans pro, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+body h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    font-weight: lighter;
+}
+
+header {
+    background-color: transparent;
+    color: #fff;
+    padding: 0px 0;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header nav img {
+    max-width: 200px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    font-family: source sans pro;
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #C271FF;
+}
+
+/* Banner Section */
+section:first-of-type {
+    text-align: center;
+    padding: 90px 20px;
+    background-image: 
+    radial-gradient(circle at top, rgba(151, 151, 151, 0.8), rgba(7, 22, 41, 0.9) 60%, rgba(0, 0, 0, 0.9)), /* Adjusted gradient */
+    url('banner.png');
+    background-size: cover;
+    background-position: center;
+    
+
+    color: white;
+}
+
+section:first-of-type div h1 {
+    font-size: 120px;
+    font-family: source sans pro;
+    font-weight: bold;
+    margin: 0px;
+}
+
+section:first-of-type div span {
+    font-family: source sans pro;
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 16px;
+    margin: 0px 30px;
+}
+
+section:first-of-type button {
+    background-color: #C271FF;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: source sans pro, sans serif;
+}
+
+section:first-of-type button:hover {
+    background-color: #ffcc00;
+}
+
+section div h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+}
+
+section div div {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+section div div div {
+    text-align: center;
+    max-width: 200px;
+}
+
+section div div div img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+section div div div h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+section div div div p {
+    font-size: 0.9rem;
+    color: white;
+}
+
+/* Quote Section */
+section:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #C271FF;
+    color: white;
+}
+
+section:nth-of-type(2) div img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+section:nth-of-type(2) blockquote {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+/* Popular Tutorials */
+section:nth-of-type(3) h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+section:nth-of-type(3) div {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+
+section:nth-of-type(3) div div {
+    text-align: center;
+    max-width: 200px;
+}
+
+section:nth-of-type(3) div img {
+    max-width: 300px;
+    object-fit: cover;
+    border-radius: 0%;
+    margin-bottom: 10px;
+    
+}
+
+section:nth-of-type(3) div h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #071629;
+}
+
+section:nth-of-type(3) div p {
+    color: #071629;
+    margin-bottom: 10px;
+}
+
+section:nth-of-type(3) div div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+section:nth-of-type(3) div h4 {
+    font-size: 1rem;
+}
+
+section:nth-of-type(3) div i {
+    color: #C271FF;
+}
+
+section:nth-of-type(3) div p {
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+/* Membership Section */
+section:nth-of-type(4) {
+    background-color: #071629; /* Dark background */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section:nth-of-type(4) h2 {
+    font-size: 2rem;
+    margin-bottom: 60px;
+}
+
+.free {
+    color: #C271FF; /* Light purple for heading */ 
+    font-weight: bold;
+}
+
+.membership {
+    color: white;
+    font-weight: lighter;
+}
+
+/* Align membership items horizontally */
+section:nth-of-type(4) > div {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+section:nth-of-type(4) > div div {
+    text-align: center;
+    max-width: 200px;
+}
+
+/* Make the image, h3, and p inside each div stack vertically */
+section:nth-of-type(4) div div img {
+    max-width: 100px;
+    margin-bottom: 10px; /* Space below the image */
+}
+
+section:nth-of-type(4) div div h3 {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: white; /* Ensure text color contrast */
+    text-align: center; /* Center the text horizontally */
+}
+
+
+section:nth-of-type(4) div div p {
+    color: #bbb; /* Light gray for text */
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+section:nth-of-type(4) button {
+    margin-top: 20px;
+    background-color: #C271FF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: source sans pro, sans serif;
+}
+
+/* Make buttons have rounded corners */
+button {
+    background-color: #C271FF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 50px; /* This makes the corners round */
+}
+
+section:nth-of-type(4) button:hover {
+    background-color: #ffcc00;
+}
+
+/* FAQ Section */
+section:nth-of-type(5) {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+section:nth-of-type(5) h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+section:nth-of-type(5) .faq-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Ensures items align at the top */
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px; /* Define a maximum width for better control */
+    margin: 0 auto; /* Center the FAQ container */
+}
+
+section:nth-of-type(5) .faq-item {
+    flex: 1 1 48%; /* Flex item takes up 48% of the width, ensuring two per row */
+    max-width: 48%; /* Ensures responsiveness */
+    margin-bottom: 40px; /* Adds space between rows */
+}
+
+section:nth-of-type(5) .faq-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #071629;
+}
+
+section:nth-of-type(5) .faq-item p {
+    font-size: 0.9rem;
+    color: #071629;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    section:nth-of-type(5) .faq-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        gap: 40px;
+    }
+
+    section:nth-of-type(5) .faq-item {
+        max-width: 100%;
+    }
+}
+
+
+
+/* Footer Section */
+footer {
+    background-color: #071629;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    gap: 20px;
+}
+
+footer img {
+    max-width: 100px;
+    float: left;
+}
+
+footer i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #bbb;
+}
