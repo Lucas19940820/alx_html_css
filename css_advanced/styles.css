@@ -160,76 +160,106 @@ h2 {
     margin-bottom: 10px;
 }
 
-/* Popular Tutorials */
-#popular-tutorials-section {
+/* Videos List */
+/* Videos List */
+#videos-list-section {
     text-align: center;
 }
 
-#popular-tutorials-section .tutorials {
+#videos-list-section .tutorials {
     display: flex;
     justify-content: center;
     gap: 80px;
     flex-wrap: wrap;
 }
 
-#popular-tutorials-section .tutorial {
+#videos-list-section .tutorial {
     text-align: center;
     max-width: 200px;
+    position: relative; /* For positioning the play button */
 }
 
-#popular-tutorials-section .tutorial img {
+#videos-list-section .tutorial img {
     max-width: 100%;
 }
 
-#popular-tutorials-section .tutorial h3 {
+/* Play button */
+.play-button {
+    content: '';
+    position: absolute;
+    top: 20%;  /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position */
+    background: rgba(255, 255, 255, 0.6); /* Semi-transparent white background */
+    border-radius: 80%;
+    padding: 20px; /* Adjust size of the button */
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.play-button::before {
+    content: '\f04b'; /* Font Awesome play icon */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900; /* Solid play button */
+    color: #C271FF;
+    font-size: 1.5rem; /* Adjust size of play button */
+}
+
+
+/* Hover effect on play button */
+.tutorial:hover .play-button {
+    background: rgba(255, 255, 255, 0.8); /* More opaque on hover */
+}
+
+#videos-list-section .tutorial h3 {
     margin-top: 10px;
     font-size: 1.2rem;
 }
 
-#popular-tutorials-section .tutorial p {
+#videos-list-section .tutorial p {
     font-size: 0.9rem;
 }
 
 /* Tutor info: Image and name */
-#popular-tutorials-section .tutor-info {
+#videos-list-section .tutor-info {
     display: flex;
     align-items: center;
     margin-top: 10px;
 }
 
-#popular-tutorials-section .tutor-info img {
+#videos-list-section .tutor-info img {
     max-width: 50px;
     border-radius: 50%;
     margin-right: 10px;
 }
 
-#popular-tutorials-section .tutor-info h4 {
+#videos-list-section .tutor-info h4 {
     color: #C271FF;
     font-size: 14px;
     font-weight: 600;
 }
 
 /* Stars and text rating */
-#popular-tutorials-section .rating-container {
+#videos-list-section .rating-container {
     display: flex; /* Align stars and text horizontally */
     align-items: center; /* Vertically center the stars and text */
     margin-top: 5px;
 }
 
-#popular-tutorials-section .rating {
+#videos-list-section .rating {
     display: flex; /* Keep stars aligned horizontally */
     color: #C271FF;
     gap: 5px; /* gap between the stars */
+    padding-bottom: 40px;
 }
 
-#popular-tutorials-section .rating-container p {
+#videos-list-section .rating-container p {
     margin-left: 10px; /* Space between stars and the '8 min' text */
     font-size: 14px;
     font-weight: 600;
     color: #C271FF;
-    padding: 20px;
+    padding-bottom: 40px;
 }
-
 
 
 /* Membership Section */
