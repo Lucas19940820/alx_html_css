@@ -1,0 +1,229 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-image: url('images/headphones_hero_1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+}
+.logo img {
+    width: 150px; /* desired width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    color: #FF6565;
+}
+
+.hero-content {
+    margin-top: 100px;
+    flex-wrap: wrap; /* Allow wrapping of items */
+}
+
+.hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-top: 250px;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Allow wrapping of items */
+}
+
+.hero-content button {
+    width: 200px;
+    padding: 15px;
+    background-color: #FF6565; /* Red background */
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px; /* Rounded button */
+    cursor: pointer;
+    font-family: Source Sans Pro, sans-serif;
+    font-weight: 0.875rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-bottom: 40px;
+
+}
+
+.hero-content button:hover {
+    opacity: 0.9;
+}
+
+.hero-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* What We Do Section */
+#what-we-do {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+    color: #071629;
+}
+.container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 30vh; /* Adjust to your desired height */
+    width: 110vh;
+    margin: 0 auto;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack content vertically */
+        height: auto; /* Allow height to adjust automatically */
+        width: auto;
+        padding: 20px; /* Add some padding for better spacing */
+        text-align: center; /* Center text */
+    }
+}
+
+
+#what-we-do h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #071629;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Allow wrapping of items */
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .service-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        gap: 20px; /* Adjust gap for better spacing */
+    }
+}
+
+.service {
+    text-align: center;
+    max-width: 200px;
+}
+
+.service img {
+    width: 66px; /* Set your desired width */
+    height: 75px; /* Set your desired height */
+    object-fit: cover; /* Maintain aspect ratio while filling the box */
+}
+
+
+.service h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #071629;
+}
+
+.service p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #071629;
+}
+
+
+
+/* General Styles for navigation menu */
+.hamburger {
+    display: none; /* Hidden by default */
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    left: 10px; /* Align hamburger icon to the left */
+    top: 20px;
+}
+
+.hamburger.active {
+    content: '✕'; /* X icon when active */
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+/* Responsive Styles for Mobile View */
+@media (max-width: 768px) {
+    /* Hide navigation links by default on small screens */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: transparent; /* Transparent background */
+        position: absolute;
+        top: 50px; /* Position below the logo */
+        left: 40%; /* Start from the center of the screen */
+        width: 200px;
+        text-align: left;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    /* Style for individual navigation links */
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+
+    /* Show hamburger icon on small screens */
+    .hamburger {
+        display: block;
+    }
+
+    /* Show navigation links when active */
+    .nav-links.active {
+        display: flex; /* Show the nav links when the menu is active */
+    }
+
+    /* Center the logo */
+    .logo img {
+        position: absolute;
+        left: 50%;
+        top: 10px;
+        transform: translateX(-50%); /* Center the logo horizontally */
+    }
+}
+
+   

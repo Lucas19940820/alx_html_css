@@ -1,0 +1,473 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-image: url('images/headphones_hero_1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+}
+.logo img {
+    width: 150px; /* desired width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    color: #FF6565;
+}
+
+.hero-content {
+    margin-top: 100px;
+    flex-wrap: wrap; /* Allow wrapping of items */
+}
+
+.hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-top: 250px;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Allow wrapping of items */
+}
+
+.hero-content button {
+    width: 200px;
+    padding: 15px;
+    background-color: #FF6565; /* Red background */
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px; /* Rounded button */
+    cursor: pointer;
+    font-family: Source Sans Pro, sans-serif;
+    font-weight: 0.875rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-bottom: 40px;
+
+}
+
+.hero-content button:hover {
+    opacity: 0.9;
+}
+
+.hero-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* What We Do Section */
+#what-we-do {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+    color: #071629;
+}
+.container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 30vh; /* Adjust to your desired height */
+    width: 110vh;
+    margin: 0 auto;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack content vertically */
+        height: auto; /* Allow height to adjust automatically */
+        width: auto;
+        padding: 20px; /* Add some padding for better spacing */
+        text-align: center; /* Center text */
+    }
+}
+
+
+#what-we-do h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #071629;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Allow wrapping of items */
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .service-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        gap: 20px; /* Adjust gap for better spacing */
+    }
+}
+
+.service {
+    text-align: center;
+    max-width: 200px;
+}
+
+.service img {
+    width: 66px; /* Set your desired width */
+    height: 75px; /* Set your desired height */
+    object-fit: cover; /* Maintain aspect ratio while filling the box */
+}
+
+
+.service h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #071629;
+}
+
+.service p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #071629;
+}
+
+
+/* Our Results Section */
+#our-results {
+    padding: 40px 20px;
+    text-align: center;
+    background-image: url('images/headphones_hero_2.jpg');
+    background-size: cover; /* Cover the entire section without stretching */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: #f5f5f5;
+}
+
+#our-results h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#our-results p {
+    
+    margin-bottom: 20px;
+    padding: 0 30px;
+}
+
+.results-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Allow wrapping of items */
+}
+@media (max-width: 768px) {
+    .results-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items horizontally */
+        gap: 20px; /* Adjust gap for better spacing */
+    }
+}
+
+.result-item {
+    text-align: center;
+    max-width: 200px;
+}
+
+.pentagon {
+    width: 200px; /* Increased size of the pentagon */
+    height: 200px;
+    background-color: #FF6565;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    position: relative;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    gap: 50px;
+}
+
+.pentagon h3, .pentagon p {
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.pentagon h3 {
+    font-size: 2.875rem;
+    top: 50%; /* Positioning the text inside the pentagon */
+    transform: translateY(-50%);
+}
+
+.pentagon p {
+    font-size: 0.9rem;
+    top: 70%; /* Adjust as needed */
+    transform: translateY(-50%);
+}
+
+
+/* Contact Us Section */
+#contact-us {
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#contact-us h2 {
+    font-size: 2rem;
+    color: #071629; /* Darker heading color */
+    margin-bottom: 30px;
+    font-family: 'Source Sans Pro', sans-serif; /* Modern font */
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 0.875rem;
+    color: #071629; /* Light grey for labels */
+    transition: transform 0.3s, font-size 0.3s;
+    transform-origin: left top;
+    pointer-events: none;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #D3D3D3; /* Light grey underline */
+    font-size: 1rem;
+    outline: none;
+    font-family: 'Arial', sans-serif;
+    background-color: white; /* Light background */
+    resize: vertical; /* Allow vertical resizing for textarea */
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    height: 40px; /* Same initial height as input */
+}
+
+.form-group input:required:valid + label,
+.form-group textarea:required:valid + label {
+    font-size: 0.8rem;
+    transform: translateY(-100%);
+    color: #071629; /* Darker color when active */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-bottom: 2px solid #FF6565; /* Red underline when focused */
+}
+
+.cta-button {
+    width: 200px;
+    padding: 15px;
+    background-color: #FF6565; /* Red background */
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px; /* Rounded button */
+    cursor: pointer;
+    font-family: Source Sans Pro, sans-serif;
+    font-weight: 0.875rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-bottom: 40px;
+}
+
+.cta-button:hover {
+    background-color: #FF4747; /* Darker red on hover */
+}
+
+footer {
+    background-color: #0b1b2b;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img {
+    width: 100px;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px; /* Adds space between social icons */
+}
+
+footer .social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+footer p {
+    color: #6b6969;
+    font-size: 14px;
+    text-align: center;
+    flex: 1; /* Keeps the copyright text centered */
+    margin-top: 40px;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    footer img {
+        margin-bottom: 10px;
+    }
+
+    footer .social-icons {
+        justify-content: center;
+        gap: 10px; /* Adjusts space between icons for smaller screens */
+    }
+
+    footer .social-icons img {
+        margin: 10px 0;
+    }
+}
+
+
+
+/* General Styles for navigation menu */
+.hamburger {
+    display: none; /* Hidden by default */
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    left: 10px; /* Align hamburger icon to the left */
+    top: 20px;
+}
+
+.hamburger.active {
+    content: '✕'; /* X icon when active */
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+/* Responsive Styles for Mobile View */
+@media (max-width: 768px) {
+    /* Hide navigation links by default on small screens */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: transparent; /* Transparent background */
+        position: absolute;
+        top: 50px; /* Position below the logo */
+        left: 40%; /* Start from the center of the screen */
+        width: 200px;
+        text-align: left;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    /* Style for individual navigation links */
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+
+    /* Show hamburger icon on small screens */
+    .hamburger {
+        display: block;
+    }
+
+    /* Show navigation links when active */
+    .nav-links.active {
+        display: flex; /* Show the nav links when the menu is active */
+    }
+
+    /* Center the logo */
+    .logo img {
+        position: absolute;
+        left: 50%;
+        top: 10px;
+        transform: translateX(-50%); /* Center the logo horizontally */
+    }
+}
+/* Base styles for service items */
+.service,
+.result-item {
+    transition: transform 0.3s ease;
+}
+
+/* Bounce effect on hover */
+.service:hover,
+.result-item:hover {
+    animation: bounce 0.5s forwards;
+}
+
+/* Keyframes for bouncing effect */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    70% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
